@@ -3,21 +3,25 @@
 SELECT 'A' || TO_CHAR(TO_NUMBER(RPAD(SUBSTR (NVL(MAX (NO),'A' || TO_CHAR (SYSDATE, 'YYYYMMDD')), 2, 13),12,'0'))+1) NO
 FROM dsrf10
 WHERE NO LIKE 'A' || TO_CHAR (SYSDATE, 'YYYYMMDD') || '%'
+
 — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
 
 LPAD用法( 將字串右靠，不足n長度，則左補string)
 
 SELECT LPAD('Oracle', 10, 'X') "LPAD 範例" FROM dual;
+
 — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
 
 RPAD用法( 將字串左靠，不足n長度，則右補string)
 
 SELECT RPAD('Oracle', 10, 'X') "RPAD 範例" FROM dual;
+
 — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
 
 LTRIM用法( 從字串最左邊去除所有set字元，set預設為空白)
 
 SELECT LTRIM('XXXXOracle', 'X') "LTRIM 範例" FROM dual;
+
 — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
 
 RTRIM用法( 從字串最右邊去除所有set字元，set預設為空白)
