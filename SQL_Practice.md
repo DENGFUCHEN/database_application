@@ -179,6 +179,9 @@ select Column_Name
 CASE用法
 
 select (CASE WHEN 表格名.Column_Name='T' THEN '符合' WHEN 表格名.Column_Name='F' THEN '不符合' WHEN 表格名.Column_Name='0' THEN '未檢驗' END) Column_Name FROM 表格名
+
+— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
+
 取回第 n ~ m 筆資料
 
 select *
