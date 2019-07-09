@@ -140,6 +140,7 @@ ALL_TAB_COMMENTS U
 WHERE    U.TABLE_NAME  LIKE  'DSFA%' ORDER BY 1
 
 — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
+
 (+) 放置在可能沒有資料的 Table 一方
 
 select t1.aa
@@ -190,6 +191,7 @@ select *
                ) b
        )
  where bRn between 5 and 10;
+ 
 — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
  
 從 Table 隨機抓 N 筆資料
